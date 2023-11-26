@@ -1,25 +1,20 @@
 import { Especialidade, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 async function main() {
-  const especialidades: Especialidade[] = [
+  const especialidades = [
     {
-      id: 1,
       name: "clinico geral",
     },
     {
-      id: 2,
       name: "ortopedista",
     },
     {
-      id: 3,
       name: "pediatria",
     },
     {
-      id: 4,
       name: "oftalmologista",
     },
     {
-      id: 5,
       name: "dermatologista",
     },
   ];
